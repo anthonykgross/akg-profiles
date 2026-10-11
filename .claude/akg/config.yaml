@@ -1,0 +1,37 @@
+questions: [workflow, deps, env, arch, security, tracker, deploy, git, tests, db, docs]
+
+workflow:
+  type: product  # no team preference; recommended default
+  dod:
+    - Tests pass
+    - Lint is clean
+    - Build succeeds
+    - Tests added or updated for the changed behaviour
+    - README and docs updated
+    - No TODO left behind
+  tdd: false
+  review: standard
+  autonomy: [commit, migrations]
+
+deps:
+  policy: ask
+
+security:
+  secrets: env-files
+
+tracker:
+  tool: none
+
+deploy:
+  target: containers
+
+git:
+  commits: conventional
+  branching: github-flow
+  language: english
+
+tests:
+  levels: unit-integration
+
+docs:
+  policy: [readme, changelog]

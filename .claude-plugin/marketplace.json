@@ -1,0 +1,24 @@
+{
+  "name": "akg-profiles",
+  "owner": { "name": "Anthony GROSS" },
+  "plugins": [
+    {
+      "name": "ddd-core",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/yonatankarp/software-design-skills.git",
+        "path": "plugins/ddd-core"
+      },
+      "description": "Language-agnostic Domain-Driven Design skills: design, review, refactor, implement"
+    },
+    {
+      "name": "tdd-patterns",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/yonatankarp/software-design-skills.git",
+        "path": "plugins/tdd-patterns"
+      },
+      "description": "Test-driven development techniques from Kent Beck's Test-Driven Development By Example"
+    }
+  ]
+}
